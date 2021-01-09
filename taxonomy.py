@@ -69,10 +69,8 @@ for species_id in range(len(species_nodes)):
 rank_names['order'][species_supclasses[12][0]]
 rank_names['family'][species_supclasses[12][1]]
 
-num_orders = len(rank_names['order'])
-num_families = len(rank_names['family'])
-
-num_supclasses = np.array([[num_orders], [num_families]])
+num_supclasses1 = len(rank_names['order'])
+num_supclasses2 = len(rank_names['family'])
 
 
 species_supclasses = np.array(species_supclasses)
