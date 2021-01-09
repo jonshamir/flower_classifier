@@ -57,11 +57,7 @@ for rank_name, node_list in rank_nodes.items():
     print(rank_name + ": " + str(len(node_list)))
 
 
-node = next((node for node in species_nodes if node.name == flower_id), None)
-
 species_nodes = rank_nodes['species']
-
-
 species_supclasses = []
 for species_id in range(len(species_nodes)):
     species_node = next((node for node in species_nodes if node.name == species_id), None)
@@ -80,6 +76,3 @@ num_supclasses = np.array([[num_orders], [num_families]])
 
 
 species_supclasses = np.array(species_supclasses)
-
-# list of classes [c1,c2,c3,...] -> lists of supclasses
-# species_subclasses[[12,12,1]]
